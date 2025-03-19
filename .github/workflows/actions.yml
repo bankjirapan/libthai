@@ -14,7 +14,7 @@ jobs:
       - name: Install build deps
         run: |
           sudo apt-get update
-          sudo apt-get install -y build-essential git cmake pkg-config
+          sudo apt-get install -y build-essential git cmake pkg-config m4 automake pkg-config libtool
       - name: Autogen
         run: |
           ./autogen.sh
