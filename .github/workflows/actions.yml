@@ -21,7 +21,7 @@ jobs:
           ./autogen.sh
       - name: Configure
         run: |
-          ./configure
+          ./configure --disable-dict
       - name: Make
         run: |
           make
